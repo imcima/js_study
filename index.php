@@ -7,6 +7,6 @@
 </head>
 <body>
     <a href="/jsclass">jsclass</a>
+    <a href="https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps/A_first_splash">2020-12-11</a>
 </body>
 </html>
-
