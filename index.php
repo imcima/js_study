@@ -6,7 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/jsclass">jsclass</a>
-    <a href="https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps/A_first_splash">2020-12-11</a>
+    <ul>
+        <li><a href="/jsclass">jsclass</a></li>
+        <li><a href="./2020-12-11">2020-12-11</a> <a href="https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps/A_first_splash" target="_blank">숫자맞추기</a></li>
+        <li><a href="./2020-12-11\number-guessing-game-start.html">2020-12-11</a> <a href="https://developer.mozilla.org/ko/docs/Learn/JavaScript/First_steps/A_first_splash" target="_blank">숫자맞추기</a></li>
+    </ul>
 </body>
 </html>
