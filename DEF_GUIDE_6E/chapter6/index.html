@@ -1,0 +1,41 @@
+<script>
+    // ex 6-1
+    function inherit(p){
+        if(p == null) throw TypeError();
+        if (Object.create) {
+            return Object.create(p);            
+        }
+        var t = typeof p;
+
+        if (t != "object" && t != "function") throw TypeError();
+
+        function f(){};
+        f.prototype = p;
+        return new f();
+    }
+
+    // portfolio 객체에 새로운 주식을 추가하는 함수.
+    function addstock(portfolio, stockname, shares){
+        portfolio[stockname] = shares;
+    }
+
+    function getvalue(portfolio){
+        var total = 0.0;
+        for(stock in portfolio){
+            var shares = portfolio[stock];
+            var price = getquote(stock);
+            total += shares * price;
+        }
+        return total;
+    }
+
+    // ex 6-2 객체의 프로퍼티를 열거하는 유용한 함수들
+    function extend(o, p) {
+        for (const prop in p) {
+            if (Object.hasOwnProperty.call(p, prop)) {
+                o[prop] = p[prop];
+            }
+        }
+        return o;
+    }
+</script>
